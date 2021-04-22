@@ -1,9 +1,9 @@
-defmodule Director.MixProject do
+defmodule Hardware.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :director,
+      app: :hardware,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
@@ -19,7 +19,7 @@ defmodule Director.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Director.Application, []}
+      mod: {Hardware.Application, []}
     ]
   end
 
